@@ -12,25 +12,25 @@
 ---
 Debian:
   pkg:
-    name: TEMPLATE-debian
-  config: /etc/TEMPLATE.d/custom.conf
+    name: hyperledger-fabric-debian
+  config: /etc/hyperledger-fabric.d/custom.conf
 
 RedHat:
   pkg:
-    name: TEMPLATE-redhat
-  config: /etc/TEMPLATE.conf
+    name: hyperledger-fabric-redhat
+  config: /etc/hyperledger-fabric.conf
 
 Suse:
   pkg:
-    name: TEMPLATE-suse
+    name: hyperledger-fabric-suse
 
 Gentoo:
   pkg:
-    name: TEMPLATE-gentoo
+    name: hyperledger-fabric-gentoo
 
 Arch:
   pkg:
-    name: TEMPLATE-arch
+    name: hyperledger-fabric-arch
   service:
     name: service-arch
 
