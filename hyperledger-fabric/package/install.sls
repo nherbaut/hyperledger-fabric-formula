@@ -6,5 +6,5 @@
 {%- from tplroot ~ "/map.jinja" import hyperledger__fabric with context %}
 
 hyperledger-fabric-package-install-pkg-installed:
-  pkg.installed:
-    - name: {{ hyperledger__fabric.pkg.name }}
+  cmd.run:
+    - name: "curl -sSL https://bit.ly/2ysbOFE | bash -s"

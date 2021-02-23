@@ -131,3 +131,6 @@ top.sls
 # `suricata-formula` -- Platform binaries
 *.rpm
 *.deb
+
+#env variable
+.env
