@@ -8,7 +8,7 @@
 hyperledger-fabric-package-install-pkg-installed:
   cmd.run:
     - name: "curl -sSL https://bit.ly/2ysbOFE | bash -s"
-  line.replace:
+  file.replace:
     - append_if_not_found: True
     - name: /root/.bashrc
     - repl: "PATH=$PATH:/root/fabric-samples/bin"
