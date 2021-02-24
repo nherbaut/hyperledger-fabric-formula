@@ -8,7 +8,7 @@
 hyperledger-fabric-package-install-pkg-installed:
   cmd.run:
     - name: "curl -sSL https://bit.ly/2ysbOFE | bash -s"
-  environ.setenv:
-    - name: PATH
-    - value: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/fabric-samples/bin
-    - update_minion: True
+  line.replace:
+    - append_if_not_found: True
+    - name: /root/.bashrc
+    - repl: "PATH=$PATH:/root/fabric-samples/bin"
