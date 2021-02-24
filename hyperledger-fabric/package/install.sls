@@ -17,4 +17,7 @@ hyperledger-fabric-package-install-pkg-installed:
     - pattern: "dummy"
     - repl: "PATH=$PATH:/root/fabric-samples/bin"
   pkg.installed:
+    - refresh: True
     - name: libtool libltdl-dev
+  
+
